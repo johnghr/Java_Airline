@@ -1,12 +1,12 @@
 package People;
 
-public class Passenger {
+public class Passenger extends Person{
 
     private String name;
     private int numberOfBags;
 
     public Passenger(String name, int numberOfBags) {
-        this.name = name;
+        super(name);
         this.numberOfBags = numberOfBags;
     }
 

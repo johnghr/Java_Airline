@@ -1,12 +1,12 @@
 package People;
 
-public class Pilot {
+public class Pilot extends Person{
 
     private String name;
     private CabinCrewRank rank;
 
     public Pilot(String name, CabinCrewRank rank) {
-        this.name = name;
+        super(name);
         this.rank =  rank;
     }
 
