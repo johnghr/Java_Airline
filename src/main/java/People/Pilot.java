@@ -1,20 +1,17 @@
 package People;
 
-public class Pilot extends Person{
+public class Pilot extends CabinCrewMember{
 
     private String name;
     private CabinCrewRank rank;
+    private int licenceNumber;
 
-    public Pilot(String name, CabinCrewRank rank) {
-        super(name);
-        this.rank =  rank;
+    public Pilot(String name, CabinCrewRank rank, int licenceNumber) {
+        super(name, rank);
+        this.licenceNumber = licenceNumber;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public CabinCrewRank getRank() {
-        return rank;
+    public int getLicenceNumber() {
+        return licenceNumber;
     }
 }
