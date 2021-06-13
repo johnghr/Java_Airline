@@ -3,7 +3,8 @@ package People;
 public enum CabinCrewRank {
 
     CAPTIAN(1),
-    FLIGHTATTENDANT(2);
+    PILOT(2),
+    FLIGHTATTENDANT(3);
 
     private final int value;
 
