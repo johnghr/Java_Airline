@@ -11,7 +11,7 @@ public class CabinCrewMemberTest {
 
     @Before
     public void setUp(){
-        cabinCrewMember = new CabinCrewMember("Susie", CabinCrewRank.CAPTIAN);
+        cabinCrewMember = new CabinCrewMember("Susie", CabinCrewRank.CAPTAIN);
     }
 
     @Test
@@ -21,6 +21,11 @@ public class CabinCrewMemberTest {
 
     @Test
     public void crewMemberHasRank(){
-        assertEquals(CabinCrewRank.CAPTIAN, cabinCrewMember.getRank());
+        assertEquals(CabinCrewRank.CAPTAIN, cabinCrewMember.getRank());
+    }
+
+    @Test
+    public void crewMemberCanRelayMessage(){
+        assertEquals("Please fasten your seatbelts, were about to hit some turbulence", cabinCrewMember.relayMessage());
     }
 }
